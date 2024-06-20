@@ -22,10 +22,18 @@ public class numeroDivisivel53 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        while (true) {
         System.out.println("Digite um numero para saber se ele é divisivel por 3 ou 5");
         int numero = sc.nextInt();
-        String retorno = Divisivelpor3ou5(numero);
-        System.out.println(retorno);
+        if(numero!=0){
+            String retorno = Divisivelpor3ou5(numero);
+            System.out.println(retorno);
+        }else{
+            System.out.println("saindo...");
+            break;
+        }
+        
+        }
         sc.close();
     }
     
