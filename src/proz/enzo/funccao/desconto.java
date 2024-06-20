@@ -29,7 +29,9 @@ public class desconto {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o valor do produto: ");
         double valor = sc.nextDouble();
+
         Object resultado = DescontoProduto(valor);
+        
         if (resultado instanceof Double){
             System.out.println("O valor com desconto é: "+ resultado);
         } else if (resultado instanceof String) {
